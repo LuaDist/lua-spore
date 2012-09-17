@@ -2,7 +2,7 @@ package = 'lua-Spore'
 version = '0.2.1-1'
 source = {
     url = 'http://cloud.github.com/downloads/fperrad/lua-Spore/lua-spore-0.2.1.tar.gz',
-    md5 = 'ffd575bad1d2f9a27ecad0839a94db9c',
+    md5 = 'a78fcc331d1d270a090af1035ef6c085',
     dir = 'lua-Spore-0.2.1',
 }
 description = {
