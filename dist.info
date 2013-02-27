@@ -1,0 +1,90 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Francois Perrad"
+depends = {
+[[lua ~> 5.1]],
+[[luasocket >= 2.0.2]],
+[[luajson >= 1.1]],
+}
+
+desc = "a generic ReST client"
+version = "0.2.1"
+maintainer = "Francois Perrad"
+files = {
+Runtime = {
+[[lib/lua/Spore.lua]],
+[[lib/lua/Spore/Core.lua]],
+[[lib/lua/Spore/GoogleDiscovery.lua]],
+[[lib/lua/Spore/Middleware/Auth/AWS.lua]],
+[[lib/lua/Spore/Middleware/Auth/Basic.lua]],
+[[lib/lua/Spore/Middleware/Auth/Bearer.lua]],
+[[lib/lua/Spore/Middleware/Auth/Digest.lua]],
+[[lib/lua/Spore/Middleware/Auth/Digest.lua]],
+[[lib/lua/Spore/Middleware/Auth/OAuth.lua]],
+[[lib/lua/Spore/Middleware/Cache.lua]],
+[[lib/lua/Spore/Middleware/DoNotTrack.lua]],
+[[lib/lua/Spore/Middleware/Format/JSON.lua]],
+[[lib/lua/Spore/Middleware/Format/XML.lua]],
+[[lib/lua/Spore/Middleware/Format/YAML.lua]],
+[[lib/lua/Spore/Middleware/Logging.lua]],
+[[lib/lua/Spore/Middleware/Mock.lua]],
+[[lib/lua/Spore/Middleware/Parameter/Default.lua]],
+[[lib/lua/Spore/Middleware/Parameter/Force.lua]],
+[[lib/lua/Spore/Middleware/Proxy/Basic.lua]],
+[[lib/lua/Spore/Middleware/Redirection.lua]],
+[[lib/lua/Spore/Middleware/Runtime.lua]],
+[[lib/lua/Spore/Middleware/UserAgent.lua]],
+[[lib/lua/Spore/Protocols.lua]],
+[[lib/lua/Spore/Request.lua]],
+[[bin/discovery2spore]],
+}
+,
+Other = {
+[[share/lua-spore/etc//echo_lab_madgex_com.lua]],
+}
+,
+Data = {
+[[share/lua-spore/CHANGES]],
+[[share/lua-spore/COPYRIGHT]],
+[[share/lua-spore/README.md]],
+}
+,
+Test = {
+[[share/lua-spore/test//33-format_xml.t]],
+[[share/lua-spore/test//04-enable.t]],
+[[share/lua-spore/test//22-oauth.t]],
+[[share/lua-spore/test//34-format_xml.t]],
+[[share/lua-spore/test//25-auth_digest.t]],
+[[share/lua-spore/test//01-request.t]],
+[[share/lua-spore/test//15-mock.t]],
+[[share/lua-spore/test//51-parameter_force.t]],
+[[share/lua-spore/test//13-logging.t]],
+[[share/lua-spore/test//31-format_json.t]],
+[[share/lua-spore/test//17-do-not-track.t]],
+[[share/lua-spore/test//12-runtime.t]],
+[[share/lua-spore/test//23-aws.t]],
+[[share/lua-spore/test//32-format_yaml.t]],
+[[share/lua-spore/test//16-cache.t]],
+[[share/lua-spore/test//00-require.t]],
+[[share/lua-spore/test//24-bearer.t]],
+[[share/lua-spore/test//07-discovery.t]],
+[[share/lua-spore/test//26-datapublica.t]],
+[[share/lua-spore/test//11-user_agent.t]],
+[[share/lua-spore/test//api.json]],
+[[share/lua-spore/test//52-parameter_default.t]],
+[[share/lua-spore/test//21-auth_basic.t]],
+[[share/lua-spore/test//02-new_from_string.t]],
+[[share/lua-spore/test//05-http_request.t]],
+[[share/lua-spore/test//42-proxy_redirect.t]],
+[[share/lua-spore/test//14-redirection.t]],
+[[share/lua-spore/test//33-format_to_xml.t]],
+[[share/lua-spore/test//06-new_from_lua.t]],
+[[share/lua-spore/test//03-wrap.t]],
+[[share/lua-spore/test//41-proxy_basic.t]],
+}
+,
+}
+
+license = "MIT/X11"
+name = "lua-spore"
+url = "http://fperrad.github.com/lua-Spore/"
